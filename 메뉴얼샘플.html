@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>1999 GAME MANUAL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+body {
+  background-image: url('bg8.jpg');
+  background-size: cover;
+}
+.w3-third w3-margin-bottom {
+background-color: white;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-light-grey" style="width:100%">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block" >Top</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="./bg.html" class="w3-button w3-block" >Play game</a>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+  <div class="w3-panel">
+    <h1><b>Strikers 1945</b></h1>
+    <p>게임 플레이 메뉴얼</p>
+  </div>
+
+  <!-- Slideshow -->
+  <div class="w3-container">
+    <div class="w3-display-container mySlides">
+      <img src="start.PNG" style="width:100%">
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="play.PNG" style="width:100%">
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="item.PNG" style="width:100%">
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="rank.PNG" style="width:100%">
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="over.PNG" style="width:100%">
+    </div>
+
+    <!-- Slideshow next/previous buttons -->
+    <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+    
+      <div class="w3-center">
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Grid -->
+  <div class="w3-row w3-container">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">게임 메뉴얼 안내</span>
+    </div>
+    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+      <h3>시작화면</h3>
+      <p>게임화면이 로딩되고 enter 키를 누르면 시작이 됩니다.<br>
+        PLAYER NAME에 이름을 입력하시면 종료 시 뜨는 랭킹 창에 기재한 이름으로 점수가 등록됩니다.
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>  <br>
+        <br><br><br>
+      </p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+      <h3>플레이화면</h3>
+      <p>조작 키는 방향키로 움직임이 가능하며, 스페이스바를 누르면 적 비행기를 공격 가능합니다.<br>
+    총으로 적을 맞추게 되면 score가 상승되며,
+    15초 마다 등장하는 아이템 박스를 먹게 되면 랜덤으로 나타나는 이벤트가 발생됩니다.<br>
+    게임 화면 왼쪽 상단에 LIFE와 먹은 아이템 표시되고, 오른쪽엔 score가 표시됩니다.<br>
+    처음 시작과 적 비행기에 공격당해서 다시 시작할 때는 닿아도 3초 동안은 라이프가 깍이지 않습니다.<br><br>
+  </p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16" style="font-style: ;">
+      <h3>아이템 종류</h3>
+      <p>게임 화면 왼쪽 상단에 먹은 아이템 종류가 표시됩니다.<br>
+        -총알 갯수 증가<br>
+          -라이프 증가 or 감소<br>
+          -스피드 증가 or 감소<br>
+          -조작 키 10초 변경<br>
+          -쉴드 5초:방어막 생성<br>
+          -꽝
+          <br>
+          <br>
+          <br><br><br>
+          <br><br>
+
+</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+      <h3>게임 종료</h3>
+      <p>라이프가 모두 소멸되면 게임이 종료 됩니다.<br>
+      게임이 종료되면 자동으로 RANK 창이 뜨고 처음에 입력된 이름과 자신이 획득한 score의 점수가 등록이 됩니다.<br>
+    REPLAY 버튼을 누르면 다시 게임을 즐길 수 있습니다.
+    <br><br><br><br><br><br><br>
+  </p>
+    </div>
+  </div>
+
+  
+
+  <!-- Contact -->
+  <form class="w3-container" action="/action_page.php" target="_blank">
+  </form>
+  </div>
+
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  
+  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+
+</footer>
+
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>

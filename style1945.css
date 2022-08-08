@@ -1,0 +1,357 @@
+
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+body{
+  background-color: #000;
+  color: white;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 1080px;
+  height: 880px;
+  font-family: 'Galmuri9';
+
+}
+#state{
+  display: block;
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  width: 200px;
+  height: 60px;
+  text-align: left;
+  display: flex;
+}
+#canvas1{
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  display: block;
+  margin: 0 auto;
+  background-color: #333;
+  z-index: 50;
+  width: 1080px;
+  height: 680px;
+}
+
+#canvas{
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  display: block;
+  margin: 0 auto;
+  background-color: transparent;
+  z-index : 100;
+  width: 1080px;
+  height: 680px;
+}
+
+#start{
+  color: white;
+  font-family: 'Galmuri9';
+  position: absolute;
+  width: 1080px;
+  height: 300px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 9000;
+  display: block;
+  text-align: center;
+  top: 70px;
+    
+}
+#ranking{
+  color: white;
+  font-family: 'Galmuri9';
+  display: none;
+  text-align: center;
+  top: 50px;
+  bottom: 50px;
+  background-color: black;
+  position: absolute;
+  width: 1080px;
+  height: 680px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1000000;
+  opacity: 0.8;
+}
+
+#ranking-text{
+  color: white;
+  font-family: 'Galmuri9';
+  text-align: center;
+  margin-right: 200px;
+
+}
+#start-g{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  animation: blink-effect 1s step-end infinite;
+  margin-top: 50px;
+}
+@keyframes blink-effect {
+    50% {
+      opacity: 0;
+    }
+  }
+#speeddown{
+  position: absolute;
+  top: 150px;
+  width: 1080px;
+  height: 300px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 9000;
+  display: none;
+  text-align: center;
+  animation: down 1.5s linear ;   
+  animation-fill-mode: forwards;
+}
+#lifedown{
+  position: absolute;
+  top: 150px;
+  width: 1080px;
+  height: 300px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 9000;
+  display: none;
+  text-align: center;
+  animation: down 1s linear ;   
+  animation-fill-mode: forwards;
+}
+@keyframes down {
+	0% { 
+		transform: translateY(0px); 
+		opacity: 1;
+	}
+	50% { 
+		transform: translateY(100px); 
+		opacity: 0.5;
+	}
+	100% { 
+		transform: translateY(100px); 
+		opacity: 0;
+	}
+}
+
+#speedup{
+  position: absolute;
+  top: 150px;
+  width: 1080px;
+  height: 300px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 9000;
+  display: none;
+  text-align: center;
+  animation: up 1s linear ;   
+  animation-fill-mode: forwards;
+}
+#lifeup{
+  position: absolute;
+  top: 150px;
+  width: 1080px;
+  height: 300px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 9000;
+  display: none;
+  text-align: center;
+  animation: up 1s linear ;   
+  animation-fill-mode: forwards;
+}
+#fakebox{
+  position: absolute;
+  top: 150px;
+  width: 1080px;
+  height: 300px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 9000;
+  display: none;
+  text-align: center;
+  animation: down 1s linear ;   
+  animation-fill-mode: forwards;
+}
+@keyframes up {
+	0% { 
+		transform: translateY(0px); 
+		opacity: 1;
+	}
+	50% { 
+		transform: translateY(-100px); 
+		opacity: 0.5;
+	}
+	100% { 
+		transform: translateY(-100px); 
+		opacity: 0;
+	}
+}
+
+#game-over{
+  color: white;
+  position: absolute;
+  width: 1080px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 100000;
+  bottom: 0px;
+  display: none;
+  top: 100px;
+  height: 680px;
+
+}
+input{
+  border: none;
+  font-size: 40px;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  font-family: 'Galmuri9';
+
+}
+#level{
+  font-family: 'Galmuri9';
+  width: 0;
+  color: white;
+  top: 50px;
+  position: absolute;
+  margin: auto;
+  z-index: 10000;
+  right: 1050px;
+  left: 10px;
+}
+#level-text{
+  font-family: 'Galmuri9';
+  color: white;
+  text-align: right;
+  display: flex;
+  align-items: baseline;
+}
+#level1{
+  font-family: 'Galmuri9';
+  color: white;
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  width: 60px;
+  text-align: left;
+  display: flex;
+  height: 30px;
+  margin-left: 10px;
+}
+#life{
+  color: white;
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  width: 60px;
+  text-align: left;
+  display: flex;
+  height: 30px;
+  margin-left: 20px;
+}
+#score-name {
+  color: white;
+  top: 50px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: auto;
+  z-index: 10000;
+  right: 10px;
+  left: 900px;
+}
+#score-text{
+  color: white;
+  text-align: right;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+#score{
+  color: white;
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  width: 60px;
+  text-align: left;
+  display: flex;
+  align-items: flex-end;
+  height: 20px;
+  flex-direction: row-reverse;
+}
+#game-over-overlay{
+  top: 50px;
+  bottom: 50px;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  width: 1080px;
+  height: 680px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1000;
+}
+
+#rank{
+  font-size: 50px;
+  font-weight: 700;
+}
+#gover{
+  animation: blink-effect 2s step-end infinite;
+  
+}
+.game-over-text{
+  font-size: 0px;
+  text-align: center;
+  margin: 0 auto;
+  
+}
+.level-text {
+  color: white;
+  text-align: right;
+  display: flex;
+  align-items: baseline;
+}
+
+.life-text {
+  color: white;
+  text-align: right;
+  display: flex;
+  align-items: baseline;
+}
+#play-again{
+  position: absolute;
+  background: none;
+  font-size: 0px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  right: 0px;
+  left: 0px;
+  top: 400px;
+  width: 212px;
+}
+#play-again:hover{
+  transform:scale(0.9);
+
+}

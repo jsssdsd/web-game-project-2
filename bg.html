@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1945</title>
+    <link rel="stylesheet" href="style1945.css">
+
+</head>
+<body>
+
+<div>
+
+    <div id="start">
+        <img src="logo.png" width="500"><p id="start-g"> Press Enter To Start</p>
+        <input type="text" id="name" placeholder="PLAYER NAME">
+    </div>
+        <div id="score-name">
+        <p class="score-text"><img src="score1.png" width="60"><span id="score">000</span>
+        </p>
+
+    </div>
+    <div id="speedup"><img src="speedup.png" width="200"></div>
+    <div id="speeddown"><img src="speeddown.png" width="200"></div>
+    <div id="lifeup"><img src="lifeup.png" width="200"></div>
+    <div id="lifedown"><img src="lifedown.png" width="200"></div>
+    <div id="fakebox"><img src="fakebox.png" width="200"></div>
+
+    </div>
+    <div id="game-over">
+        <p class="game-over-text"><img src="gover.png" id="gover" width="400"></p>
+        
+        <button id="play-again" onclick="reset()"><img src="reb.png" width="200" top="200"></button>
+    </div>
+
+    <div id="level">
+        <p class="level-text"><img src="level1.png" width="80"><span id="level1"> </span>
+        </p>
+        <p class="life-text"><img src="life.png" width="70"><span id="life">3</span>
+        </p>
+        <p class="state-text"><span id="state">I T E M</span>
+        </p>
+    </div>
+    
+    <div id="game-over-overlay"></div>
+    <div id="ranking">             
+         <p class="ranking-text"><img src="rankingY.png" width="400"><p id="rank"></p>
+        </p>
+    </div>
+<canvas id="canvas"></canvas>    
+<canvas id="canvas1"></canvas>    
+
+</div>
+</body>
+
+<script src="man.js"></script>
+<script src="bg.js"></script>
+<script src="1945수정.js"></script>
+</html>
